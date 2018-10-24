@@ -8,6 +8,7 @@
     <title>Introduccion HTML</title>
   </head>
   <body>
+    <form name="Form_Educacion" action="index.html" method="post">
     <svg width="100px" height="100px" viewBox="0 0 100 100">
       <image xlink:href="images/LogoOM.svg" height="100px" width="100px"> </image>
     </svg>
@@ -62,26 +63,26 @@
 
     <br>
     <h2>Agregar Estudios</h2>
-    Año:
-      <select  name="SelectAnio">
+    <label  id="SelectAnio">Año</label>
+      <select  name="SelectAnio" autofocus>
         <option>2018</option>
         <option>2017</option>
         <option>2016</option>
       </select>
     <br><br>
-    Institución:
-    <input type="text" name="Institucion" value="" placeholder="Nombre Institución">
+    <label  id="Institucion">Institución:</label>
+    <input type="text" name="Institucion" placeholder="Nombre Institución" required>
     <br><br>
-    Titulo:
-    <input type="text" name="Titulo" value="" placeholder="Ing. de Sistemas">
+    <label  id="Titulo">Titulo:</label>
+    <input type="text" name="Titulo"  placeholder="Ing. de Sistemas" required>
     <br><br>
-    Culmino:
-    <select  name="SeelectCulmino">
+    <label  id="SelectCulmino">Culmino:</label>
+    <select  name="SelectCulmino">
       <option>Si</option>
       <option>No</option>
     </select>
     <br><br>
-    <input type="submit" name="enviar" value="Enviar">
+    <input type="submit">
     <br>
     <br>
     <br>
@@ -92,5 +93,6 @@
         <strong> Email:</strong>ing.olman.Matallana@gmail.com  <strong> Celular:</strong> 3162407448  <strong> Redes Sociales:  </strong>  <img src="images/fb.png" height="30px" width="30px">/OlmanMatallana  -  <img src="images/tw.jpg" height="30px" width="30px"> @OlmanMatallana
       </center>
     </footer>
+    </form>
   </body>
 </html>
